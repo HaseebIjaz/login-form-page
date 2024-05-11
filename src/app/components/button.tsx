@@ -4,12 +4,13 @@ import React from 'react'
 type Props = {
     onClick?: React.MouseEventHandler<HTMLDivElement>;
     className?:string;
+    text:string
 }
 
 const Button = (props: Props) => {
-    const { onClick, className } = props;
+    const { onClick, className, text } = props;
   return (
-    <div onClick={onClick} className={className}>Button</div>
+    <div onClick={onClick} className={className}>{text}</div>
   )
 }
 
